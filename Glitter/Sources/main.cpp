@@ -9,7 +9,7 @@
 #include <cstdio>
 #include <cstdlib>
 
-int main(int argc, char * argv[]) {
+int main(int argc, char *argv[]) {
 
     // Load GLFW and Create a Window
     glfwInit();
@@ -43,6 +43,7 @@ int main(int argc, char * argv[]) {
         // Flip Buffers and Draw
         glfwSwapBuffers(mWindow);
         glfwPollEvents();
-    }   glfwTerminate();
+    }
+    glfwTerminate();
     return EXIT_SUCCESS;
 }
