@@ -9,7 +9,8 @@
 #include <cstdio>
 #include <cstdlib>
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
 
     // Load GLFW and Create a Window
     glfwInit();
@@ -21,7 +22,8 @@ int main(int argc, char *argv[]) {
     auto mWindow = glfwCreateWindow(mWidth, mHeight, "OpenGL", nullptr, nullptr);
 
     // Check for Valid Context
-    if (mWindow == nullptr) {
+    if (mWindow == nullptr)
+    {
         fprintf(stderr, "Failed to Create OpenGL Context");
         return EXIT_FAILURE;
     }
@@ -32,7 +34,8 @@ int main(int argc, char *argv[]) {
     fprintf(stderr, "OpenGL %s\n", glGetString(GL_VERSION));
 
     // Rendering Loop
-    while (glfwWindowShouldClose(mWindow) == false) {
+    while (glfwWindowShouldClose(mWindow) == false)
+    {
         if (glfwGetKey(mWindow, GLFW_KEY_ESCAPE) == GLFW_PRESS)
             glfwSetWindowShouldClose(mWindow, true);
 
